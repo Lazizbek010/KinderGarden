@@ -1,0 +1,117 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+
+body {}
+
+.hidden {
+      display: none !important;
+}
+
+a{
+      text-decoration: none;
+}
+
+.container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 10px;
+}
+.nav__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+.logo {
+      width: 180px;
+      height: 80px;
+}
+
+.logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.nav {
+      padding: 15px 0;
+      box-shadow: 0 0 10px 4px #e1e1e1;
+}
+
+.nav__lang {
+      position: relative;
+      text-transform: uppercase;
+}
+
+.nav__lang div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 7px;
+}
+
+.nav__lang .content {
+      pointer-events: none;
+}
+
+.nav__lang-options {
+      min-width: 100%;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 6px);
+      display: flex;
+      flex-direction: column;
+      z-index: 500;
+      border-radius: 8px;
+      background: #f7f7f7;
+}
+.base-btn{
+      padding: 12px 24px;
+      border-radius: 30px;
+      border: 1.5px solid #000;
+      background-color: #000;
+      color: #fff;
+}
+.nav__right{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+}
+.nav__lang-options .lang-option-item {
+      padding: 8px;
+      width: 100%;
+      display: block;
+      font-size: 10px;
+      line-height: 10px;
+      color: #000;
+}
+.lang-text-info{
+      font-size: 16px;
+}
+.nav__lang-options .lang-option-item:hover {
+      background: rgb(224, 224, 224);
+}
+
+
+.nav__lang-options .lang-option-item:first-child {
+      border-radius: 8px 8px 0 0;
+}
+
+.nav__lang-options .lang-option-item:last-child {
+      border-radius: 0 0 8px 8px;
+}
+
+.nav__list{
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+}
+
+.nav__list a{
+      font-size: 18px;
+      color: #000;
+}
