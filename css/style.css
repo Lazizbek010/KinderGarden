@@ -5,13 +5,22 @@
       font-family: sans-serif;
 }
 
-body {}
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      overflow-x: hidden;
+}
+main{
+      
+}
 
 .hidden {
       display: none !important;
 }
 
-a{
+a {
       text-decoration: none;
 }
 
@@ -20,12 +29,14 @@ a{
       margin: 0 auto;
       padding: 0 10px;
 }
-.nav__content{
+
+.nav__content {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
 }
+
 .logo {
       width: 180px;
       height: 80px;
@@ -38,8 +49,15 @@ a{
 }
 
 .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       padding: 15px 0;
       box-shadow: 0 0 10px 4px #e1e1e1;
+      z-index: 1000;
+      background-color: #ffffffc3;
+      backdrop-filter: blur(15px);
 }
 
 .nav__lang {
@@ -69,18 +87,21 @@ a{
       border-radius: 8px;
       background: #f7f7f7;
 }
-.base-btn{
+
+.base-btn {
       padding: 12px 24px;
       border-radius: 30px;
       border: 1.5px solid #000;
       background-color: #000;
       color: #fff;
 }
-.nav__right{
+
+.nav__right {
       display: flex;
       align-items: center;
       gap: 30px;
 }
+
 .nav__lang-options .lang-option-item {
       padding: 8px;
       width: 100%;
@@ -89,9 +110,11 @@ a{
       line-height: 10px;
       color: #000;
 }
-.lang-text-info{
+
+.lang-text-info {
       font-size: 16px;
 }
+
 .nav__lang-options .lang-option-item:hover {
       background: rgb(224, 224, 224);
 }
@@ -105,13 +128,447 @@ a{
       border-radius: 0 0 8px 8px;
 }
 
-.nav__list{
+.nav__list {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
 }
 
-.nav__list a{
+.nav__list a {
       font-size: 18px;
       color: #000;
+      text-shadow: 1px 1px 4px #000;
+}
+
+
+.swiper {
+      width: 100%;
+      height: 100vh;
+}
+
+.banner{
+      z-index: 999;
+}
+
+.swiper-slide img{
+      width: 100%;
+      height: 100%;
+}
+
+.logoped, .games{
+      padding: 80px 0 0 0;
+      background: url('../images/bg-main.png');
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+.logoped__title{
+      font-size: 60px;
+      font-weight: 700;
+      font-family: sans-serif;
+      margin-bottom: 40px;
+      line-height: normal;
+      text-align: center;
+}
+
+.logoped__desc{
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0 auto;
+      margin-bottom: 140px;
+      text-align: center;
+}
+
+.logoped__gallery{
+      display: flex;
+}
+
+
+
+.logoped-img img{
+      width: 100%;
+      height: 300px !important;
+}
+/* Komiljon */
+.schools{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 45px;
+}
+
+
+.content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f8a65d;
+      width: 1000px;
+      padding: 0 40px;
+      border-radius: 20px;
+}
+
+.content .left{
+      width: 380px;
+      height: 590px;
+}
+
+
+.content .left img{
+      width: inherit;
+      height: inherit;
+}
+
+.content .right{
+  width: 450px;
+  height: 450px;
+  margin-top: 200px;
+}
+
+.content .left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+}
+
+.content .left h1, p{
+      font-family: sans-serif;
+}
+
+.content .left h1, p, h6, input{
+      margin-bottom: 15px;
+}
+
+h1{
+      margin-bottom: 14px;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-size: 42px;
+}
+
+.content input{
+      width: 300px;
+      height: 60px;
+      border-radius: 28px;
+      padding-left: 30px;
+      outline: none;
+      border: none;
+}
+
+.content button{
+      width: 300px;
+      height: 60px;
+      border-radius: 28px;
+      background-color: #ff7500;
+      border: none;
+      color: white;
+}
+
+.bogcha{
+      margin-bottom: 30px;
+      margin-top: 30px;
+}
+
+.bogcha-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.bogcha .bogcha-content .right img{
+      width: 490px;
+      height: 350px;
+}
+
+.bogcha2 .bogcha-content .right img{
+      width: 490px;
+      height: 350px;
+}
+
+.bogcha-content .right img{
+      border-radius: 20px;
+}
+
+.bogcha-content .left h1{
+      font-family: sans-serif;
+      font-size: 53px;
+}
+
+
+
+.bogcha-content .left p{
+      line-height: 27px;
+      font-family: sans-serif;
+      font-size: 18px;
+      width: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bogcha2{
+      margin-bottom: 70px;
+      margin-top: 120px;
+}
+
+.bogcha-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+
+.bogcha-content .right img{
+      border-radius: 20px;
+}
+
+.bogcha-content .left h1{
+      font-family: sans-serif;
+      font-size: 53px;
+}
+
+
+
+.bogcha-content .left p{
+      line-height: 27px;
+      font-family: sans-serif;
+      font-size: 18px;
+      width: 400px;
+}
+
+/* Qudratillo */
+
+.hero{
+      background-color: #efe0e0;
+      padding: 100px 0;
+}
+.hero__content h1{
+      font-family: sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      color: #1e2f67;
+      margin-bottom: 15px;
+}
+.hero__content p{
+      font-family: sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      color: #4b4b4b;
+      margin-bottom: 10px;
+}
+.top{
+      margin-bottom: 10px;
+}
+.cards1{
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+      padding: 0 2px;
+}
+.card1{
+      max-width: 400px;
+      background-color: white;
+      padding: 15px 20px ;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      height: 300px;
+}
+.bottom{
+      display: flex;
+      margin-bottom: 20px;
+}
+.card2{
+      max-width: 400px;
+      padding: 10px 25px 0 25px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+}
+.text h1{
+      font-family: sans-serif;
+      font-size: 1.1875rem;
+      line-height: 1.4;
+      margin-bottom: 17px;
+      font-weight: 700;
+      color: #4b4b4b;
+}
+.card2 img{
+      height: 80px;
+      border-radius: 50%;
+      border: 5px solid #c2bebe;
+      
+}
+.hero__content svg{
+      width: 15px;
+      height: 15px;
+      margin-top: 5px;
+}
+.hero__content button{
+      padding: 0 0 0 10px;
+      display: flex;
+      width: 100px;
+      height: 50px;
+      align-items: center;
+      background-color: rgb(255, 85, 0);
+      border: 0;
+      
+}
+@media (max-width:980px) {
+      .cards1{
+            display: flex;
+           flex-wrap: wrap;
+            align-items: center;
+      }
+      .bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+}
+/* Shaxriyor */
+.card__section{
+      padding: 100px 0;
+}
+.card{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+  }
+  .cards h1{
+      font-size: 48px;
+      font-weight: 600;
+      font-family: sans-serif;
+      padding: 10px 0 20px 0;
+  }
+  span{
+      color: red;
+  }
+  hr{
+      height: 5px;
+      width: 150px;
+      background-color: red;
+      margin-bottom: 20px;
+  }
+  .div h1{
+      font-size: 20px;
+      font-weight: 600;
+      font-family: sans-serif;
+      color: red;
+  }
+  .div p{
+      max-width: 350px;
+         font-size: 16px;
+         color: #555;
+         margin-bottom: 20px;
+  }
+  .div button{
+      background-color: rgb(49, 48, 48);
+      color: white;
+      padding: 15px 15px;
+      border: none;
+  }
+  .btn{
+      margin-top: -3px;
+  }
+
+  @media (max-width:1040px) {
+      .card{
+          display: flex;
+          flex-wrap: wrap;
+      }
+  }
+  @media (max-width:590px) {
+      .cards h1{
+          font-size: 38px;
+      }
+  }
+  @media (max-width:415px) {
+      .cards h1{
+          font-size: 28px;
+      }
+  }
+  @media (max-width:350px) {
+      .cards h1{
+          font-size: 25px;
+      }
+      .div img{
+          width: 280px;
+      }
+  }
+
+/* FOOTER AKRAMJON */
+.f-top-card a img{
+      width: 22.99px;
+      height: 22.99px;
+      color: #fff;
+}
+
+footer{
+      width: 100%;
+      background-color: rgb(61, 60, 66);
+      color: #fff;
+}
+
+.tn-atom__img{
+      width: 169px;
+      height: 87.99px;
+}
+
+.top{
+      display: flex;
+      justify-content: space-between;
+}
+
+.f-content{
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+}
+.f-top-card .logo{
+      padding-bottom: 20px;
+}
+
+.f-top-card a{
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 15px;
+}
+
+.f-t-p{
+      margin-bottom: 10px;
+}
+
+.bosh-joy{
+      margin-right: 100px;
+}
+
+.line{
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      background-position: center center;
+      margin-bottom: 30px;
+}
+
+.f-bottom{
+      margin-bottom: 100px;
+}
+
+.f-bottom p{
+      padding-left: 100px;
 }

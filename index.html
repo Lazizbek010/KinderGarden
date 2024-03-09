@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>KinderGarden</title>
+      <!-- SWIPER JS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <!-- CSS -->
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/media.css">
 </head>
+
 <body>
       <header>
             <nav class="nav">
@@ -19,23 +23,26 @@
                               </div>
                               <div class="nav__right">
                                     <div class="btns">
-                                          <button class="base-btn">Sign Up</button>
+
                                     </div>
                                     <div class="nav__lang">
                                           <div onclick="openLangMenu()">
-                                              <span class="content lang-text-info">RU</span>
-                                              <span class="content">
-                                                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 14 9" fill="none">
-                                                      <path d="M1 0.999999L7 7.0251L13 1" stroke="silver" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <span class="content lang-text-info">RU</span>
+                                                <span class="content">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9"
+                                                            viewBox="0 0 14 9" fill="none">
+                                                            <path d="M1 0.999999L7 7.0251L13 1" stroke="silver"
+                                                                  stroke-width="2" stroke-linecap="round"
+                                                                  stroke-linejoin="round" />
                                                       </svg>
-                                              </span>
+                                                </span>
                                           </div>
                                           <div class="nav__lang-options hidden">
-                                              <a id="en" class="lang-option-item" href="#">English</a>
-                                              <a id="ru" class="lang-option-item" href="#">Русский</a>
-                                              <a id="uz" class="lang-option-item" href="#">O'zbekcha</a>
+                                                <a id="en" class="lang-option-item" href="#">English</a>
+                                                <a id="ru" class="lang-option-item" href="#">Русский</a>
+                                                <a id="uz" class="lang-option-item" href="#">O'zbekcha</a>
                                           </div>
-                                      </div>
+                                    </div>
                               </div>
                         </div>
                         <div class="nav__menu">
@@ -52,12 +59,316 @@
             </nav>
       </header>
 
-      <main></main>
+      <main>
+            <section class="banner">
+                  <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                    <img src="https://picsum.photos/1700/1200?random=1" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="https://picsum.photos/1700/1200?random=2" alt="">
+                              </div>
+                              <div class="swiper-slide">
+                                    <img src="https://picsum.photos/1700/1200?random=3" alt="">
+                              </div>
+                              ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
 
-      <footer></footer>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                  </div>
+            </section>
+            <section class="logoped">
+                  <div class="container">
+                        <h1 class="logoped__title">ЛОГОПЕД ЁРДАМИ</h1>
+                        <p class="logoped__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                              aliquam vero eveniet in incidunt? Dolorem aliquid nostrum illo minima tempore
+                              reprehenderit fuga iusto rem, reiciendis nihil ad fugiat repudiandae quaerat vero minus
+                              odit quidem ratione, omnis facere ipsa voluptate ullam aut accusamus. Optio soluta aliquam
+                              aut accusamus ut eius amet.</p>
+                        <div class="logoped__gallery">
+                              <div class="logoped-img">
+                                    <img src="./images/logoped-img1.jpg" alt="" height="300">
+                              </div>
+                              <div class="logoped-img">
+                                    <img src="./images/logoped-img2.jpg" alt="" height="300">
+                              </div <div class="logoped-img">
+                              <img src="./images/logoped-img3.jpg" alt="" height="300">
+                        </div </div>
+                  </div>
+            </section>
+            <section class="games">
+                  <div class="container">
+                        <h1 class="logoped__title">УЙИНЛАР</h1>
+                        <p class="games__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam
+                              vero eveniet in incidunt? Dolorem aliquid nostrum illo minima tempore reprehenderit fuga
+                              iusto rem, reiciendis nihil ad fugiat repudiandae quaerat vero minus odit quidem ratione,
+                              omnis facere ipsa voluptate ullam aut accusamus. Optio soluta aliquam aut accusamus ut
+                              eius amet.</p>
+                        <div class="games__gallery">
+                              <video src=""></video>
+                        </div>
+                  </div>
+            </section>
+            <!-- Komiljon -->
+            <section class="bogcha">
+                  <div class="container">
+                        <div class="bogcha-content">
+                              <div class="left">
+                                    <h1>Превращаем <br> занятия</h1>
+      
+                                    <p>чередуем задания, физкультминутки и отдых в игровой комнате, поэтому дети лучше запоминают любую информацию и не устают.</p>
+                              </div>
+                              <div class="right">
+                                    <img src="./imeges/jorgenhaland101813.jpg" alt="">
+                              </div>
+                        </div>
+                  </div>
+            </section>
+      
+      
+            <section class="bogcha2">
+                  <div class="container">
+                        <div class="bogcha-content">
+                              <div class="right">
+                                    <img src="./imeges/jorgenhaland101813.jpg " alt="">
+                              </div>
+                              <div class="left">
+                                    <h1>Даём обратную <br> связь</h1>
+      
+                                    <p>Присылаем фото и видео с занятий, комментируем интересные моменты.</p>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section class="schools">
+                  <div class="container">
+                              <div class="content">
+                                    <div class="left">
+                                          <img src="./imeges/iPhone_Mockup.png" alt="">
+                                    </div>
+                                    <div class="right">
+                                          <h1>Запишитесь
+                                                на пробное занятие</h1>
+      
+                                          <p>Уточним пожелания и предложим удобное время для пробного занятия по указанному номеру  </p>
+                                                         
+                                          <h6>Введите номер телефона</h6>
+                                                <input type="text" placeholder="+998 " name="" id=""><br> 
+      
+                                          <button>Записаться на пробное занятие</button>
+                                    </div>
+                              </div>
+                  </div>
+            </section>
+            <!-- Qudratillo -->
+            <section class="hero">
+                  <div class="container">
+                        <div class="hero__content">
+                              <h1>Testimonials</h1>
+                              <p>Hear from our Parents!</p>
+                              <div class="topss">
+                                    <div class="cards1">
+                                          <div class="Card">
+                                                <div class="card1">
+                                                      <p>Milo’s House has made such a huge difference to my daughter’s
+                                                            knowledge of sounds and letters. She has begun spelling and
+                                                            writing with confidence and to my amazement she was reading
+                                                            books
+                                                            within weeks of starting! My daughter loves attending class
+                                                            each
+                                                            week.</p>
 
+                                                </div>
+                                                <div class="card2">
+                                                      <div class="img">
+                                                            <img src="./images/svg1.jpg" alt="">
+                                                      </div>
+                                                      <div class="text">
+                                                            <h1>Liz</h1>
+                                                            <p>Kew East</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="Card">
+                                                <div class="card1">
+                                                      <p>Milo’s House has made such a huge difference to my daughter’s
+                                                            knowledge of sounds and letters. She has begun spelling and
+                                                            writing with confidence and to my amazement she was reading
+                                                            books
+                                                            within weeks of starting! My daughter loves attending class
+                                                            each
+                                                            week.</p>
+                                                      <p>
+                                                            I love the way the sessions are fun and gently build on each
+                                                            other. Beau is more than ready for school next year and
+                                                            Milo’s House has played a big role in his preparation.
+                                                      </p>
+
+                                                </div>
+                                                <div class="card2">
+                                                      <div class="img">
+                                                            <img src="./images/svg2.jpg" alt="">
+                                                      </div>
+                                                      <div class="text">
+                                                            <h1>Cassie</h1>
+                                                            <p>Glen Iris</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="Card">
+                                                <div class="card1">
+                                                      <p>Milo’s House has made such a huge difference to my daughter’s
+                                                            knowledge of sounds and letters. She has begun spelling and
+                                                            writing with confidence and to my amazement she was reading
+                                                            books
+                                                            within weeks of starting! My daughter loves attending class
+                                                            each
+                                                            week.</p>
+                                                      <p>
+                                                            We have been so impressed by how much Layla has learnt in
+                                                            the short time since she started. It is wonderful to see her
+                                                            confidence growing week after week as she is learning more
+                                                            letters and words.
+                                                      </p>
+
+                                                </div>
+                                                <div class="card2">
+                                                      <div class="img">
+                                                            <img src="./images/svg3.jpg" alt="">
+                                                      </div>
+                                                      <div class="text">
+                                                            <h1>Jeanie</h1>
+                                                            <p>Kew</p>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+
+
+                        </div>
+                  </div>
+            </section>
+            <!-- Shaxriyor -->
+            <section class="card__section">
+                  <div class="container">
+                        <div class="cards">
+                              <h1 class="lame">WHAT <span>PARENTS SAY ❤️</span></h1>
+                              <hr>
+                              <div class="card">
+
+                                    <div class="div">
+                                          <img src="./images/Screenshot 2024-03-09 081813.png" alt="">
+                                          <h1>STAGE EXPOSURE</h1>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam
+                                                laboriosam quaerat,
+                                                obcaecati,
+                                                repellendus cumque omnis alias maiores iure corrupti atque veritatis
+                                                aspernatur possimus corporis
+                                                ad!
+                                                Magni quidem quis quam.</p>
+                                          <button>Veiw Video</button>
+                                    </div>
+                                    <div class="div">
+                                          <img src="./images/Screenshot 2024-03-09 082005.png" alt="">
+                                          <h1>SAFETY & SECURITY</h1>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam
+                                                laboriosam quaerat,
+                                                obcaecati,
+                                                repellendus cumque omnis alias maiores iure corrupti atque veritatis
+                                                aspernatur possimus corporis
+                                                ad!
+                                                Magni quidem quis quam.</p>
+                                          <button>Veiw Video</button>
+                                    </div>
+                                    <div class="div">
+                                          <img src="./images/Screenshot 2024-03-09 082020.png" alt="">
+                                          <h1>SOCIO-EMOTIONAL</h1>
+                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam
+                                                laboriosam quaerat,
+                                                obcaecati,
+                                                repellendus cumque omnis alias maiores iure corrupti atque veritatis
+                                                aspernatur possimus corporis
+                                                ad!
+                                                Magni quidem quis quam.</p>
+                                          <button class="btn">Veiw Video</button>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </section>
+      </main>
+      <!-- Footer Akramjon -->
+      <footer>
+            <div class="container">
+                  <div class="f-content">
+                        <div class="top">
+                              <div class="f-top-card">
+                                    <div class="logo">
+                                          <img src="./logo_trial.png" alt="">
+                                    </div>
+                                    <p>Portalda eʼlon qilingan materiallardan nusxa koʻchirish,<br> tarqatish va boshqa
+                                          shakllarda foydalanish faqat tahririyat <br> yozma roziligi bilan amalga
+                                          oshirilishi mumkin.</p>
+                              </div>
+                              <div class="f-top-card">
+                                    <p class="f-t-p">Bizning ijtimoiy tarmoqlar</p>
+                                    <a href="https://www.instagram.com/">
+                                          <img src="./icons/icon.svg" alt="">
+                                          <p>Instagram</p>
+                                    </a>
+                                    <a href="https://www.telegram.com/">
+                                          <img src="./icons/icon-telegram.svg" alt="">
+                                          <p>Telegram</p>
+                                    </a>
+                                    <a href="https://www.facebook.com/">
+                                          <img src="./icons/facebook-icon.svg" alt="">
+                                          <p>Facebook</p>
+                                    </a>
+                                    <a href="https://www.youtube.com/">
+                                          <img src="./icons/youtube-icon.svg" alt="">
+                                          <p>Youtobe</p>
+                                    </a>
+                              </div>
+                              <div class="f-top-card bosh-joy">
+                                    <p class="f-t-p">Bog'lanish</p>
+                                    <a href="https://www.youtube.com/">
+                                          <img src="./icons/phone-call.svg" alt="">
+                                          <p>72 221-99-99</p>
+                                    </a> <a href="https://www.youtube.com/">
+                                          <img src="./icons/1.svg" alt="">
+                                          <p>https://drive.google.com
+                                          </p>
+                                    </a>
+                                    INN 305036719 <br>
+                                    Manzil: Jizzax sh. Sh.Rashidov 49
+                              </div>
+                        </div>
+                        <div class="f-bottom">
+                              <div class="line"></div>
+                              <p>2023 © asiaschool.uz</p>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+
+
+
+
+      <!-- SWIPER JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/swiper.js"></script>
       <!-- JS -->
       <script src="./js/main.js"></script>
       <script src="./js/lang.js"></script>
 </body>
+
 </html>
