@@ -18,42 +18,48 @@
             <nav class="nav">
                   <div class="container">
                         <div class="nav__content">
-                              <div class="logo">
+                              <a href="#" class="logo">
                                     <img src="./logo_trial.png " alt="">
-                              </div>
-                              <div class="nav__right">
-                                    <div class="btns">
-                                          <a class="base-btn" href="">Ro'yhatdan o'tish</a>
-                                    </div>
-                                    <div class="nav__lang">
-                                          <div onclick="openLangMenu()">
-                                                <img class="lang-img" width="30" src="./icons/uz.svg" alt="">
-                                                <span class="content lang-text-info">RU</span>
-                                                <span class="content">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9"
-                                                            viewBox="0 0 14 9" fill="none">
-                                                            <path d="M1 0.999999L7 7.0251L13 1" stroke="silver"
-                                                                  stroke-width="2" stroke-linecap="round"
-                                                                  stroke-linejoin="round" />
-                                                      </svg>
-                                                </span>
+                              </a>
+                              <div class="nav__menu">
+                                    <div class="nav__right">
+                                          <div class="btns">
+                                                <a class="base-btn" href="#contact">Ro'yhatdan o'tish</a>
                                           </div>
-                                          <div class="nav__lang-options hidden">
-                                                <a id="ru" class="lang-option-item" href="#">Русский</a>
-                                                <a id="uz" class="lang-option-item" href="#">O'zbekcha</a>
+                                          <div class="bars-parent">
+                                                <div class="bars">
+                                                      <span></span><span></span><span></span>
+                                                </div>
+                                                <div class="nav__lang">
+                                                      <div onclick="openLangMenu()">
+                                                            <img class="lang-img" width="30" src="./icons/uz.svg" alt="">
+                                                            <span class="content lang-text-info">RU</span>
+                                                            <span class="content">
+                                                                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9"
+                                                                        viewBox="0 0 14 9" fill="none">
+                                                                        <path d="M1 0.999999L7 7.0251L13 1" stroke="silver"
+                                                                              stroke-width="2" stroke-linecap="round"
+                                                                              stroke-linejoin="round" />
+                                                                  </svg>
+                                                            </span>
+                                                      </div>
+                                                      <div class="nav__lang-options hidden">
+                                                            <a id="ru" class="lang-option-item" href="#">Русский</a>
+                                                            <a id="uz" class="lang-option-item" href="#">O'zbekcha</a>
+                                                      </div>
+                                                </div>
                                           </div>
                                     </div>
+                                    <ul class="nav__list">
+                                          <li><a href="#games">Уйинлар</a></li>
+                                          <li><a href="#logoped">Логопед ёрдами</a></li>
+                                          <li><a href="#psixolog">Психолог маслахати</a></li>
+                                          <li><a href="#childrens-right">Бола хукуклари</a></li>
+                                          <li><a href="#documents">Иш хужжатлари</a></li>
+                                          <li><a href="#article">Илмий маколалар</a></li>
+                                    </ul>
+                                    
                               </div>
-                        </div>
-                        <div class="nav__menu">
-                              <ul class="nav__list">
-                                    <li><a href="#games">Уйинлар</a></li>
-                                    <li><a href="#logoped">Логопед ёрдами</a></li>
-                                    <li><a href="#">Психолог маслахати</a></li>
-                                    <li><a href="#">Бола хукуклари</a></li>
-                                    <li><a href="#">Иш хужжатлари</a></li>
-                                    <li><a href="#">Илмий маколалар</a></li>
-                              </ul>
                         </div>
                   </div>
             </nav>
@@ -79,6 +85,7 @@
                         <div class="swiper-button-next"></div>
                   </div>
             </section>
+
             <!-- Section Direktion -->
             <section class="direction">
                   <div class="container">
@@ -98,6 +105,7 @@
                         </div>
                   </div>
             </section>
+
             <!-- Section Logoped -->
             <section id="logoped" class="logoped">
                   <div class="container">
@@ -118,6 +126,7 @@
                         </div </div>
                   </div>
             </section>
+
             <!-- Section Games -->
             <section id="games" class="games">
                   <div class="container">
@@ -132,8 +141,9 @@
                         </div>
                   </div>
             </section>
+
             <!-- Section Psixolog -->
-            <section class="psixolog">
+            <section class="psixolog" id="psixolog">
                   <div class="container">
                       <div class="psixolog__page">
                           <div class="psixolog__text__content">
@@ -147,8 +157,9 @@
                       </div>
                   </div>
               </section>
+
             <!-- Section Documents -->
-            <section class="documents">
+            <section id="documents" class="documents">
                   <div class="container">
                       <div class="documents__nav">
                           <img class="documents__img1" src="./images/odam.png" alt="">
@@ -160,8 +171,9 @@
                         </div>
                         <img class="documents__img3" src="./images/uka.png" alt="">
               </section>
+
               <!-- Childrens right -->
-              <section id="logoped" class="logoped childrens-right">
+              <section id="childrens-right" class="logoped childrens-right">
                   <div class="container">
                         <h1 class="childrens-right__image1">
                               <img src="./images/bolalar-xuqulari.jpg" alt="">
@@ -182,6 +194,7 @@
                         </div </div>
                   </div>
             </section>
+
             <!-- Komiljon -->
             <section class="bogcha">
                   <div class="container">
@@ -198,7 +211,6 @@
                         </div>
                   </div>
             </section>
-
             <section class="bogcha2">
                   <div class="container">
                         <div class="bogcha-content">
@@ -213,6 +225,7 @@
                         </div>
                   </div>
             </section>
+
             <!-- Section Testimonials -->
             <section class="testimonials">
                   <div class="container">
@@ -328,11 +341,12 @@
                                           </div>
                                     </div>
                               </div>
-
                         </div>
                   </div>
             </section>
-            <section class="article">
+
+            <!-- Section Articles -->
+            <section class="article" id="article">
                   <div class="container">
                         <div class="article__page">
                             <div class="article__content">
@@ -348,6 +362,7 @@
                         </div>
                     </div>
             </section>
+
             <!-- Section Our-team -->
             <section class="our-team">
                   <div class="container">
@@ -422,6 +437,23 @@
 
                   </div>
             </section>
+
+            <!-- Section Contact -->
+            <section id="contact" class="contact">
+                  <div class="container">
+                        <div class="contact__info">
+                              <form action="#" class="contact__left">
+                                    <input type="text" placeholder="Ismingiz">
+                                    <input type="nuber" placeholder="Familiyangiz">
+                                    <input type="text" placeholder="Guvohnoma raqami">
+                                    <button class="base-btn contact-btn">Jo'natish</button>
+                              </form>
+                              <div class="contact__right">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97257.84088855788!2d71.70806008846947!3d40.37987632958886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83431937abc5%3A0xcfa4d876b34e7bbc!2sFergana%2C%20Fergana%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1710116200435!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                              </div>
+                        </div>
+                  </div>
+            </section>
       </main>
 
       <!-- Footer  -->
@@ -430,9 +462,9 @@
                   <div class="footer__content">
                         <div class="footer__top">
                               <div class="footer__top-card">
-                                    <div class="logo">
+                                    <a href="#" class="footer__logo logo">
                                           <img src="./logo_trial.png" alt="">
-                                    </div>
+                                    </a>
                                     <p class="footer__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                           Ipsum beatae earum rerum iste animi obcaecati cum, quisquam praesentium
                                           laudantium! Necessitatibus qui ratione quidem odit tempore totam natus
@@ -442,39 +474,41 @@
                                     <p class="footer__top-card-title">Bizning ijtimoiy tarmoqlar</p>
                                     <a href="#">
                                           <img src="./icons/icon.svg" alt="">
-                                          <p>Instagram</p>
+                                          <p class="social-links">Instagram</p>
                                     </a>
                                     <a href="#">
                                           <img src="./icons/icon-telegram.svg" alt="">
-                                          <p>Telegram</p>
+                                          <p class="social-links">Telegram</p>
                                     </a>
                                     <a href="#">
                                           <img src="./icons/facebook-icon.svg" alt="">
-                                          <p>Facebook</p>
+                                          <p class="social-links">Facebook</p>
                                     </a>
                                     <a href="#">
                                           <img src="./icons/youtube-icon.svg" alt="">
-                                          <p>Youtobe</p>
+                                          <p class="social-links">Youtobe</p>
                                     </a>
                               </div>
                               <div class="footer__top-card">
                                     <p class="footer__top-card-title">Bog'lanish</p>
                                     <a href="#">
                                           <img src="./icons/phone-solid.svg" alt="">
-                                          <p>99 999-99-99</p>
+                                          <p class="social-links">99 999-99-99</p>
                                     </a> <a href="#">
                                           <img src="./icons/envelope-solid.svg" alt="">
-                                          <p>jon@gmail.com</p>
+                                          <p class="social-links">jon@gmail.com</p>
                                     </a>
-                                    INN 999999999 <br>
+                                    <p class="social-links"> 
+                                          INN 999999999 <br>
                                     Manzil: Andijon sh. A.Olimxon 49
+                                    </p>
                               </div>
                         </div>
                         <div class="footer__bottom">
                               <div class="line"></div>
                               <div>
                                     <p class="footer__bottom-desc">© Copyright 2024. Fergana Valley School. All Rights
-                                          Reserved | Made by LazizbekDev</p>
+                                          Reserved | Made by <a href="https://lazizbekisaqov19981110@gmail.com">LazizbekDev</a></p>
                               </div>
                         </div>
                   </div>
