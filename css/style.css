@@ -17,7 +17,8 @@ body {
       flex-direction: column;
       overflow-x: hidden;
 }
-main{
+
+main {
       flex-grow: 1;
 }
 
@@ -59,6 +60,31 @@ a {
       color: #fff;
       font-size: 13px;
       text-decoration: none;
+}
+
+.to-Top-Btn {
+      transform: rotate(180deg);
+      position: fixed;
+      right: 40px;
+      bottom: -124px;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      z-index: 6000;
+      background: red;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      box-shadow: 0 0 4px coral;
+      cursor: pointer;
+}
+
+.to-Top-Btn.active {
+      bottom: 100px;
+}
+
+.to-Top-Btn svg {
+      pointer-events: none;
 }
 
 /* Header */
@@ -160,18 +186,45 @@ a {
       gap: 30px;
       list-style: none;
 }
-.bars{
+
+.bars {
       display: none;
       flex-direction: column;
       gap: 5px;
+      height: 22px;
 }
-.bars span{
+
+.bars span {
       width: 32px;
       border-radius: 4px;
       height: 4px;
       background-color: #000;
 }
-.nav__list a {
+
+.bars span:nth-child(1) {
+      transition: transform 0.7s cubic-bezier(0.42, 0, 0.28, 1.09);
+}
+
+.bars span:nth-child(3) {
+      transition: transform 0.7s cubic-bezier(0.42, 0, 0.28, 1.09);
+}
+
+.bars.active span:nth-child(1) {
+      transform: translate(0, 5px) rotate(45deg);
+      transition: transform 0.7s cubic-bezier(0.42, 0, 0.28, 1.09);
+}
+
+.bars.active span:nth-child(2) {
+      display: none;
+}
+
+.bars.active span:nth-child(3) {
+      transform: translate(0, -4px) rotate(-45deg);
+      transition: transform 0.7s cubic-bezier(0.42, 0, 0.28, 1.09);
+}
+
+.nav__list a,
+.resNAv__list a {
       font-size: 16px;
       color: #000;
       transition: 0.3s;
@@ -179,6 +232,34 @@ a {
 
 .nav__list a:hover {
       color: red;
+}
+
+.resNAv {
+      position: fixed;
+      left: 0;
+      top: 113px;
+      z-index: 10000;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      height: 0;
+      transition: all 0.3s linear;
+      box-shadow: 0 2px 10px 0px #e1e1e1;
+
+}
+
+.resNAv.active {
+      height: auto;
+      padding: 30px 0;
+      transition: all 0.3s linear;
+}
+
+.resNAv__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style: none;
 }
 
 /* Section Games */
@@ -401,9 +482,11 @@ a {
 .logoped__gallery {
       display: flex;
 }
+
 .logoped-img {
       width: calc(100% / 3);
 }
+
 .logoped-img img {
       width: 100%;
       height: 300px;
@@ -420,19 +503,23 @@ a {
       align-items: center;
       justify-content: space-between;
 }
-.bogcha .bogcha-content .right{
+
+.bogcha .bogcha-content .right {
       width: 490px;
       height: 350px;
       border-radius: 20px;
 }
+
 .bogcha .bogcha-content .right img {
       width: 490px;
       height: 350px;
       border-radius: 20px;
 }
-.bogcha-content .left{
+
+.bogcha-content .left {
       max-width: 590px;
 }
+
 .bogcha-content .left h1 {
       font-family: sans-serif;
       font-size: 53px;
@@ -444,16 +531,18 @@ a {
       font-family: sans-serif;
       font-size: 18px;
 }
-.bogcha-content2{
+
+.bogcha-content2 {
       margin-top: 90px;
 }
+
 /* Section Testimonials */
 .testimonials {
       background-color: #efe0e0;
       padding: 120px 0;
 }
 
-.testimonials__title{
+.testimonials__title {
       font-size: 60px;
       font-weight: 600;
       color: #1e2f67;
@@ -522,9 +611,10 @@ a {
 }
 
 /* Section Artiles */
-.childrens-right__desc{
+.childrens-right__desc {
       margin-bottom: 70px;
 }
+
 .article {
       padding: 80px 0;
       background-color: yellowgreen;
@@ -543,6 +633,7 @@ a {
       line-height: 26px;
       text-align: center;
 }
+
 .article__images {
       margin-top: 60px;
       display: flex;
@@ -550,6 +641,7 @@ a {
       flex-wrap: wrap;
       justify-content: center;
 }
+
 .article__images img {
       width: 300px;
       height: 300px;
@@ -573,15 +665,18 @@ a {
       flex-direction: column;
       justify-content: space-between;
 }
-.psixolog__desc{
+
+.psixolog__desc {
       line-height: 24px;
 }
-.psixolog__images{
+
+.psixolog__images {
       display: flex;
       gap: 40px;
       flex-wrap: wrap;
       justify-content: space-between;
 }
+
 .psixolog__images img {
       width: calc(50% - 20px);
       height: 400px;
@@ -598,9 +693,12 @@ a {
       justify-content: space-between;
       align-items: center;
 }
-.documents__img1, .documents__img2{
+
+.documents__img1,
+.documents__img2 {
       width: 200px;
 }
+
 .documents__h2 {
       font-size: 50px;
       text-align: center;
@@ -702,6 +800,9 @@ a {
 .contact__right {
       width: calc(100% / 2 - 20px);
       height: 400px;
+      background-color: #dfdfdf99;
+      border-radius: 8px;
+
 }
 
 .contact__right iframe {
@@ -714,7 +815,7 @@ a {
 #footer {
       background-color: rgb(61, 60, 66);
       color: #fff;
-      padding-top: 20px ;
+      padding-top: 20px;
 }
 
 .footer__content {
@@ -764,11 +865,12 @@ a {
       margin-bottom: 15px;
 }
 
-.footer__top-card .logo img{
+.footer__top-card .logo img {
       padding-bottom: 20px;
       width: 180px !important;
       height: 100px !important;
 }
+
 .footer__bottom {
       padding: 25px 0;
 }
@@ -778,6 +880,7 @@ a {
       font-size: 13px;
       line-height: 20px;
 }
-.footer__bottom-desc  a{
+
+.footer__bottom-desc a {
       color: #fff;
 }

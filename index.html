@@ -6,6 +6,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>KinderGarden</title>
+      <!-- AOS ANIMATION -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <!-- SWIPER JS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <!-- CSS -->
@@ -15,6 +17,12 @@
 
 <body>
       <header>
+            <button onclick="scrollToTop()" class="to-Top-Btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 9" fill="none">
+                      <path d="M1 0.999999L7 7.0251L13 1" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                  </svg>
+              </button>
             <nav class="nav">
                   <div class="container">
                         <div class="nav__content">
@@ -60,7 +68,16 @@
                                           <li><a href="#documents">Иш хужжатлари</a></li>
                                           <li><a href="#article">Илмий маколалар</a></li>
                                     </ul>
-
+                                    <div class="resNAv">
+                                          <ul class="resNAv__list">
+                                                <li><a href="#games">Уйинлар</a></li>
+                                                <li><a href="#logoped">Логопед ёрдами</a></li>
+                                                <li><a href="#psixolog">Психолог маслахати</a></li>
+                                                <li><a href="#childrens-right">Бола хукуклари</a></li>
+                                                <li><a href="#documents">Иш хужжатлари</a></li>
+                                                <li><a href="#article">Илмий маколалар</a></li>
+                                          </ul>
+                                    </div>
                               </div>
                         </div>
                   </div>
@@ -92,17 +109,17 @@
             <section class="direction">
                   <div class="container">
                         <div class="direction__content">
-                              <h1 class="direction__title">В Бэби-клубе всё сразу!</h1>
-                              <p class="direction__desc">Больше не нужно выбирать, куда отдать ребёнка. Занятия
+                              <h1 class="direction__title" data-aos="fade-up"> В Бэби-клубе всё сразу!</h1>
+                              <p class="direction__desc" data-aos="fade-up">Больше не нужно выбирать, куда отдать ребёнка. Занятия
                                     построены так, что малыш развивается сразу <br> <span>в нескольких
                                           направленияx</span></p>
                               <div class="direction__info">
-                                    <div class="left-div-1"><span></span>Уйинлар</div>
-                                    <div class="left-div-2"><span></span>Логопед ёрдами</div>
-                                    <div class="left-div-3"><span></span>Психолог маслахати</div>
-                                    <div class="right-div-1"><span></span>Бола хукуклари</div>
-                                    <div class="right-div-2"><span></span>Иш хужжатлари</div>
-                                    <div class="right-div-3"><span></span>Илмий маколалар</div>
+                                    <div class="left-div-1" data-aos="zoom-in-up"><span></span>Уйинлар</div>
+                                    <div class="left-div-2" data-aos="zoom-in-up"><span></span>Логопед ёрдами</div>
+                                    <div class="left-div-3" data-aos="zoom-in-up"><span></span>Психолог маслахати</div>
+                                    <div class="right-div-1" data-aos="zoom-in-up"><span></span>Бола хукуклари</div>
+                                    <div class="right-div-2" data-aos="zoom-in-up"><span></span>Иш хужжатлари</div>
+                                    <div class="right-div-3" data-aos="zoom-in-up"><span></span>Илмий маколалар</div>
                               </div>
                         </div>
                   </div>
@@ -111,20 +128,20 @@
             <!-- Section Logoped -->
             <section id="logoped" class="logoped">
                   <div class="container">
-                        <h1 class="logoped__title">ЛОГОПЕД ЁРДАМИ</h1>
-                        <p class="logoped__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        <h1 class="logoped__title" data-aos="flip-up">ЛОГОПЕД ЁРДАМИ</h1>
+                        <p class="logoped__desc" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                               aliquam vero eveniet in incidunt? Dolorem aliquid nostrum illo minima tempore
                               reprehenderit fuga iusto rem, reiciendis nihil ad fugiat repudiandae quaerat vero minus
                               odit quidem ratione, omnis facere ipsa voluptate ullam aut accusamus. Optio soluta aliquam
                               aut accusamus ut eius amet.</p>
                         <div class="logoped__gallery">
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img1.jpg" alt="" height="300">
                               </div>
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img2.jpg" alt="" height="300">
                               </div>
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img3.jpg" alt="" height="300">
                               </div </div>
                         </div>
@@ -133,13 +150,13 @@
             <!-- Section Games -->
             <section id="games" class="games">
                   <div class="container">
-                        <h1 class="logoped__title">УЙИНЛАР</h1>
-                        <p class="games__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam
+                        <h1 class="logoped__title" data-aos="flip-down">УЙИНЛАР</h1>
+                        <p class="games__desc" data-aos="zoom-in">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam
                               vero eveniet in incidunt? Dolorem aliquid nostrum illo minima tempore reprehenderit fuga
                               iusto rem, reiciendis nihil ad fugiat repudiandae quaerat vero minus odit quidem ratione,
                               omnis facere ipsa voluptate ullam aut accusamus. Optio soluta aliquam aut accusamus ut
                               eius amet.</p>
-                        <div class="games__gallery">
+                        <div class="games__gallery" data-aos="fade-up">
                               <video controls src="./videos/kinder-garden-video1.mp4"></video>
                         </div>
                   </div>
@@ -150,16 +167,16 @@
                   <div class="container">
                         <div class="psixolog__page">
                               <div class="psixolog__text__content">
-                                    <h1 class="logoped__title">PSIXOLOG MASLAHATI</h1>
-                                    <p class="games__desc psixolog__desc">Lorem ipsum dolor sit amet, consectetur
+                                    <h1 class="logoped__title" data-aos="flip-up">PSIXOLOG MASLAHATI</h1>
+                                    <p class="games__desc psixolog__desc" data-aos="zoom-in">Lorem ipsum dolor sit amet, consectetur
                                           adipisicing elit. Illo veniam harum consequuntur voluptates quisquam, repellat
                                           ipsam aspernatur, natus dolor officia quas, ea consequatur corporis
                                           distinctio. Aspernatur velit eligendi non temporibus repellendus quidem,
                                           doloremque, rem, nam voluptas eius recusandae. Magni, recusandae.</p>
                               </div>
                               <div class="psixolog__images">
-                                    <img src="./images/psixolog.jpg" alt="">
-                                    <img src="./images/psixolog.jpg" alt="">
+                                    <img data-aos="fade-right" src="./images/psixolog.jpg" alt="">
+                                    <img data-aos="fade-left" src="./images/psixolog.jpg" alt="">
                               </div>
                         </div>
                   </div>
@@ -169,37 +186,37 @@
             <section id="documents" class="documents">
                   <div class="container">
                         <div class="documents__nav">
-                              <img class="documents__img1" src="./images/odam.png" alt="">
-                              <h1 class="documents__h2">ISH XUJJATLAR</h1>
-                              <img class="documents__img2" src="./images/qol.png" alt="">
+                              <img class="documents__img1" data-aos="flip-right" src="./images/odam.png" alt="">
+                              <h1 class="documents__h2" data-aos="fade-up">ISH XUJJATLAR</h1>
+                              <img class="documents__img2" data-aos="flip-left"  src="./images/qol.png" alt="">
                         </div>
                         <p class="documents__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                               numquam facilis nemo porro? Quo sunt ullam in
                               velit! Expedita, quae maiores architecto eum corrupti reprehenderit ut aperiam illum
                               tempore tenetur.</p>
                   </div>
-                  <img class="documents__img3" src="./images/uka.png" alt="">
+                  <img class="documents__img3" data-aos="zoom-in-up" src="./images/uka.png" alt="">
             </section>
 
             <!-- Childrens right -->
             <section id="childrens-right" class="logoped childrens-right">
                   <div class="container">
-                        <h1 class="childrens-right__image1">
+                        <h1 class="childrens-right__image1" data-aos="fade-up">
                               <img src="./images/bolalar-xuqulari.jpg" alt="">
                         </h1>
-                        <p class="logoped__desc childrens-right__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                        <p data-aos="zoom-in" class="logoped__desc childrens-right__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
                               aliquam vero eveniet in incidunt? Dolorem aliquid nostrum illo minima tempore
                               reprehenderit fuga iusto rem, reiciendis nihil ad fugiat repudiandae quaerat vero minus
                               odit quidem ratione, omnis facere ipsa voluptate ullam aut accusamus. Optio soluta aliquam
                               aut accusamus ut eius amet.</p>
                         <div class="logoped__gallery">
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img1.jpg" alt="" height="300">
                               </div>
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img2.jpg" alt="" height="300">
                               </div>
-                              <div class="logoped-img">
+                              <div class="logoped-img" data-aos="fade-up">
                                     <img src="./images/logoped-img3.jpg" alt="" height="300">
                               </div>
                         </div>
@@ -210,21 +227,21 @@
             <section class="bogcha">
                   <div class="container">
                         <div class="bogcha-content">
-                              <div class="left">
+                              <div class="left" data-aos="flip-up">
                                     <h1>Превращаем <br> занятия</h1>
 
                                     <p>чередуем задания, физкультминутки и отдых в игровой комнате, поэтому дети лучше
                                           запоминают любую информацию и не устают.</p>
                               </div>
-                              <div class="right">
+                              <div class="right" data-aos="flip-down">
                                     <img src="./images/jorgenhaland101813.jpg ">
                               </div>
                         </div>
                         <div class="bogcha-content bogcha-content2">
-                              <div class="right">
+                              <div class="right" data-aos="flip-right">
                                     <img src="./images/jorgenhaland101813.jpg" alt="">
                               </div>
-                              <div class="left">
+                              <div class="left" data-aos="flip-left">
                                     <h1>Даём обратную <br> связь</h1>
 
                                     <p>Присылаем фото и видео с занятий, комментируем интересные моменты.</p>
@@ -236,8 +253,8 @@
             <section class="testimonials">
                   <div class="container">
                         <div class="testimonials__content">
-                              <h1 class="testimonials__title">Testimonials</h1>
-                              <p class="testimonials__desc">Hear from our Parents!</p>
+                              <h1 class="testimonials__title" data-aos="flip-up">Testimonials</h1>
+                              <p class="testimonials__desc" data-aos="zoom-in">Hear from our Parents!</p>
                               <div class=" swiper2">
                                     <div class="swiper-wrapper">
                                           <div class="swiper-slide Card">
@@ -356,14 +373,14 @@
                   <div class="container">
                         <div class="article__page">
                             <div class="article__content">
-                                <h1>ILMIY MAQOLALAR</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo ipsam sint, qui velit ipsa excepturi reprehenderit assumenda voluptate soluta repellendus voluptatibus animi hic doloremque, enim deserunt earum quod, fuga rerum. Repellat cupiditate saepe aspernatur! Recusandae sapiente itaque tempora laborum iure repudiandae. Dolorum alias officia repudiandae voluptates esse id, vitae quasi. Quisquam eveniet soluta atque vitae numquam deserunt ipsum nesciunt incidunt quas ut doloribus maiores, in quis similique excepturi mollitia, ullam aperiam modi sed itaque fugit amet ratione voluptas nisi?</p>
+                                <h1 data-aos="flip-up">ILMIY MAQOLALAR</h1>
+                                <p data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo ipsam sint, qui velit ipsa excepturi reprehenderit assumenda voluptate soluta repellendus voluptatibus animi hic doloremque, enim deserunt earum quod, fuga rerum. Repellat cupiditate saepe aspernatur! Recusandae sapiente itaque tempora laborum iure repudiandae. Dolorum alias officia repudiandae voluptates esse id, vitae quasi. Quisquam eveniet soluta atque vitae numquam deserunt ipsum nesciunt incidunt quas ut doloribus maiores, in quis similique excepturi mollitia, ullam aperiam modi sed itaque fugit amet ratione voluptas nisi?</p>
                             </div>
                             <div class="article__images">
-                                <img src="./images/kitob.jpg" alt="">
-                                <img src="./images/mac.jpg" alt="">
-                                <img src="./images/kitob.jpg" alt="">
-                                <img src="./images/mac.jpg" alt="">
+                                <img data-aos="fade-up"  src="./images/kitob.jpg" alt="">
+                                <img  data-aos="fade-up" src="./images/mac.jpg" alt="">
+                                <img data-aos="fade-up"  src="./images/kitob.jpg" alt="">
+                                <img data-aos="fade-up"  src="./images/mac.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -373,7 +390,7 @@
             <section class="our-team">
                   <div class="container">
                         <div class="our-team__content">
-                              <h1 class="lame">Bizning <span>Jamoamiz ❤️</span></h1>
+                              <h1 class="lame" data-aos="flip-up">Bizning <span>Jamoamiz ❤️</span></h1>
                               <div class="line"></div>
                               <div class="swiper3">
                                     <div class="swiper-wrapper">
@@ -522,6 +539,13 @@
             </div>
       </footer>
 
+      <!-- AOS ANIMATION -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+            AOS.init({
+                  duration: 1000,
+            });
+          </script>
       <!-- SWIPER JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./js/swiper.js"></script>
