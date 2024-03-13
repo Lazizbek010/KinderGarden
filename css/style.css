@@ -55,13 +55,20 @@ a {
 .base-btn {
       padding: 12px 24px;
       border-radius: 30px;
-      border: 1.5px solid #000;
+      border: 1px solid #ef664d;
       background-color: #000;
-      color: #fff;
+      color: #ef664d;
       font-size: 13px;
       text-decoration: none;
+      transition: background-color .3s ease-out,color .4s ease-out, transform 0.5s;
 }
-
+.base-btn:hover{
+      background-color: #ef664d;
+      border: 1px solid #2525;
+      color: #fff;
+      cursor: pointer;
+      transform: translate3D(0, -4px, 0);
+}
 .to-Top-Btn {
       transform: rotate(180deg);
       position: fixed;
@@ -72,10 +79,11 @@ a {
       display: grid;
       place-items: center;
       z-index: 6000;
-      background: red;
+      background: #ef664d;
       border-radius: 50%;
+      border-color: #c27466;
       transition: all 0.5s ease;
-      box-shadow: 0 0 4px coral;
+      box-shadow: 0 0 4px #fff;
       cursor: pointer;
 }
 
@@ -122,7 +130,9 @@ a {
 }
 
 .nav__lang {
+      width: 75px;
       position: relative;
+      cursor: pointer;
       text-transform: uppercase;
 }
 
@@ -171,7 +181,10 @@ a {
 .nav__lang-options .lang-option-item:hover {
       background: rgb(224, 224, 224);
 }
-
+.lang-img{
+      width: 30px;
+      height: 15px;
+}
 
 .nav__lang-options .lang-option-item:first-child {
       border-radius: 8px 8px 0 0;
@@ -226,18 +239,19 @@ a {
 .nav__list a,
 .resNAv__list a {
       font-size: 16px;
-      color: #000;
+      color: #252525;
       transition: 0.3s;
+      transition: color .8s ease, background-color .7s ease-in-out;
 }
 
 .nav__list a:hover {
-      color: red;
+      color: #ef664d;
 }
 
 .resNAv {
       position: fixed;
       left: 0;
-      top: 113px;
+      top: 108px;
       z-index: 10000;
       background-color: #fff;
       width: 100%;
@@ -269,10 +283,11 @@ a {
 
 .games__desc {
       margin-bottom: 40px;
+      color: #d8482f;
 }
 
 .games__gallery {
-      border: 4px solid red;
+      border: 4px solid #252522;
 }
 
 .games__gallery video {
@@ -324,12 +339,14 @@ a {
       font-size: clamp(1rem, 3vw, 21px);
       line-height: 29px;
       margin-bottom: 100px;
+      color: #ef664d;
 }
 
 .direction__desc span {
       font-size: clamp(1rem, 3vw, 21px);
       font-weight: 700;
       line-height: 29px;
+      color: #ef664d;
 }
 
 .direction__info {
@@ -462,6 +479,7 @@ a {
 }
 
 .logoped__title {
+      color: #c27466;
       font-size: 60px;
       font-weight: 700;
       font-family: sans-serif;
@@ -477,6 +495,7 @@ a {
       margin: 0 auto;
       margin-bottom: 140px;
       text-align: center;
+      color: #ef664d;
 }
 
 .logoped__gallery {
@@ -524,12 +543,16 @@ a {
       font-family: sans-serif;
       font-size: 53px;
       margin-bottom: 25px;
+      color: #ef664d99;
 }
-
+.bogcha-content .left span{
+      color: #d8482f;
+}
 .bogcha-content .left p {
       line-height: 27px;
       font-family: sans-serif;
       font-size: 18px;
+      color: tomato;
 }
 
 .bogcha-content2 {
@@ -538,20 +561,20 @@ a {
 
 /* Section Testimonials */
 .testimonials {
-      background-color: #efe0e0;
+      background-color: rgba(255, 160, 122, 0.346);
       padding: 120px 0;
 }
 
 .testimonials__title {
       font-size: 60px;
       font-weight: 600;
-      color: #1e2f67;
+      color: #ef664d;
       margin-bottom: 15px;
 }
 
 .testimonials__desc {
       font-size: 16px;
-      color: #4b4b4b;
+      color: #d8482f;
       margin-bottom: 50px;
       max-width: 700px;
 }
@@ -617,12 +640,12 @@ a {
 
 .article {
       padding: 80px 0;
-      background-color: yellowgreen;
+      background-color: #c2747689;
 }
 
 
 .article__content h1 {
-      color: #000;
+      color: #ef664d;
       font-size: 60px;
       text-align: center;
       margin-bottom: 25px;
@@ -632,6 +655,7 @@ a {
       font-size: 22px;
       line-height: 26px;
       text-align: center;
+      color: #d8482f;
 }
 
 .article__images {
@@ -668,6 +692,8 @@ a {
 
 .psixolog__desc {
       line-height: 24px;
+      color: #8fd82f;
+      -webkit-text-stroke: #d8482f .6px;
 }
 
 .psixolog__images {
@@ -685,7 +711,7 @@ a {
 
 /* Section Documents */
 .documents {
-      background-color: crimson;
+      background: url('../images/bg-main.png');
 }
 
 .documents__nav {
@@ -702,15 +728,14 @@ a {
 .documents__h2 {
       font-size: 50px;
       text-align: center;
-      color: #fff;
+      color: #c2746699;
 }
 
 .documents__desc {
       font-size: 22px;
       margin: 50px 0;
       line-height: 26px;
-      color: #fff;
-
+      color: #d8482f90;
 }
 
 .documents__img3 {
@@ -746,13 +771,13 @@ a {
       font-size: 20px;
       font-weight: 600;
       font-family: sans-serif;
-      color: red;
+      color: #ef664d;
 }
 
 .our-team__card p {
       max-width: 350px;
       font-size: 16px;
-      color: #555;
+      color: #d8482f;
       margin-bottom: 20px;
 }
 
